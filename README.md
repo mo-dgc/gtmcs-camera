@@ -10,14 +10,16 @@ I know this is a waste of a Pi0 to just be used as a MJPEG streamer, but it's ju
 
 1. Burn Raspbian Jesse Light to an SD Card and get your Pi0 online.
 
-   https://github.com/mo-dgc/Tent-Controller/wiki/Installation#install-raspbian-to-sd-card
-   https://github.com/mo-dgc/Tent-Controller/wiki/Installing-Raspbian-from-Mac
+   [Install Raspbian to SD Card](https://github.com/mo-dgc/Tent-Controller/wiki/Installation#install-raspbian-to-sd-card)
+   
+   [Installing Raspbian from Mac](https://github.com/mo-dgc/Tent-Controller/wiki/Installing-Raspbian-from-Mac)
   
 2. Install required packages
    ```
    sudo apt install -y avahi-daemon
    sudo apt install -y python-dev python-pip python-setuptools python3 python3-dev python3-pip python3-setuptools
    sudo apt install -y git
+   sudo pip install picamera
    ```
   
 3. Clone streameye
