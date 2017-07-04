@@ -35,5 +35,12 @@ I know this is a waste of a Pi0 to just be used as a MJPEG streamer, but it's ju
    ```
   
 6. Run installer
-  TBD
+   TBD
+   ```
+   sudo apt install -y avahi-daemon
+   sudo apt install -y python-dev python-pip python-setuptools python3 python3-dev python3-pip python3-setuptools
+   /etc/streameye/stremeye.conf
+   /etc/streameye/raspimjpeg.conf
+   /usr/local/bin/streameye.sh
+   ```
   
