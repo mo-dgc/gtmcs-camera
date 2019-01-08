@@ -47,4 +47,27 @@ I know this is a waste of a Pi0 to just be used as a MJPEG streamer, but it's ju
    /etc/streameye/raspimjpeg.conf
    /usr/local/bin/streameye.sh
    ```
-  
+
+```
+$ cat /etc/systemd/system/streameye.service
+[Unit]
+Description=Streameye
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/streameye.sh start
+ExecStop=/usr/local/bin/streameye.sh stop
+RemainAfterExit=True
+
+[Install]
+WantedBy=multi-user.target
+```  
+
+```
+$ sudo systemctl daemon-reload
+$ sudo systemctl start streameye
+$ sudo systemctl stop streameye
+$ sudo systemctl restart streameye
+$ systemctl status streameye
+$ systemctl enable streameye
+```
